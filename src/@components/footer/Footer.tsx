@@ -114,10 +114,15 @@ export default function Footer() {
                 <span>📝</span>
                 <span>블로그</span>
               </Link>
-              <div className="flex items-center space-x-2 text-sm text-gray-400">
+              <Link 
+                href="https://www.instagram.com/thepin_golf_academy/" 
+                className="flex items-center space-x-2 text-sm hover:text-green-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>📸</span>
                 <span>인스타그램</span>
-              </div>
+              </Link>
             </div>
             
             <div className="pt-4">

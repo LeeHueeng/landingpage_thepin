@@ -2,9 +2,11 @@
 
 import React, { useState } from 'react'
 import Link from 'next/link'
+import GolfGame from './GolfGame'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isGameOpen, setIsGameOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -30,6 +32,13 @@ export default function Navbar() {
         <Link href='/pros' className='hover:text-green-300 transition-colors'>프로 소개</Link>
         <Link href='/location' className='hover:text-green-300 transition-colors'>오시는 길</Link>
         <Link href='/reservation' className='bg-green-600 hover:bg-green-700 px-4 py-2 rounded-full transition-colors'>예약/문의</Link>
+        <button 
+          onClick={() => setIsGameOpen(true)}
+          className='hover:text-green-300 transition-colors text-lg'
+          title="이스터에그 게임"
+        >
+          🎮
+        </button>
       </div>
 
       {/* 햄버거 메뉴 버튼 */}
@@ -86,7 +95,7 @@ export default function Navbar() {
             <Link 
               href='/reviews' 
               onClick={closeMenu}
-              className='text-white hover:text-green-300 transition-colors py-2 border-b border-green-700'
+              className='text-white hover:text-green-300 transition-colors py-2 border-blue-700'
             >
               ⭐ 사용 후기
             </Link>
@@ -111,6 +120,15 @@ export default function Navbar() {
             >
               📞 예약/문의
             </Link>
+            <button 
+              onClick={() => {
+                setIsGameOpen(true)
+                closeMenu()
+              }}
+              className='text-white hover:text-green-300 transition-colors py-2 border-b border-green-700 text-left'
+            >
+              🎮 이스터에그 게임
+            </button>
           </div>
 
           {/* 모바일 메뉴 하단 정보 */}
@@ -127,6 +145,12 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      {/* 골프 게임 모달 */}
+      <GolfGame 
+        isOpen={isGameOpen} 
+        onClose={() => setIsGameOpen(false)} 
+      />
     </nav>
   )
 }

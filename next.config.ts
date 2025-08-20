@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  env: {
+    NEXT_PUBLIC_KAKAO_APP_KEY: '24b0b230764c5057e1856fa17685ce62', // ← 일단 직접 넣기 (테스트)
+  },
 };
 
 export default nextConfig;
