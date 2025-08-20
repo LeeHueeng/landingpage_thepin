@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "더핀 골프 아카데미 청라 골프장",
     description: "최신 골프 장비와 최고의 트레이너를 만나보세요",
-    url: "https://yourwebsite.com", // 실제 도메인으로 변경하세요
+    url: "https://landingpage-thepin.vercel.app/", // 실제 도메인으로 변경하세요
     siteName: "더핀 골프 아카데미",
     images: [
       {
