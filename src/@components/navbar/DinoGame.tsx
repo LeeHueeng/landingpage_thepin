@@ -17,7 +17,7 @@ export default function GolfGame({ isOpen, onClose }: GolfGameProps) {
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
   
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const gameLoopRef = useRef<number>()
+  const gameLoopRef = useRef<number | null>(null)
   const ballRef = useRef<{ x: number; y: number; velocityX: number; velocityY: number; radius: number }>({
     x: 100,
     y: 200,

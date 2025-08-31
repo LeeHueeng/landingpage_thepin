@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-green-900 text-white">
+    <footer className="bg-[#0A0A0A] text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
@@ -13,13 +13,13 @@ export default function Footer() {
               <span className="text-2xl">🏌️</span>
               <h3 className="text-xl font-bold">더핀 골프 아카데미</h3>
             </div>
-            <p className="text-green-200 text-sm">
+            <p className="text-[#A1A1AA] text-sm">
               청라큐이디 더핀골프아카데미<br />
               청라실내골프연습장
             </p>
             <div className="flex space-x-4">
-              <span className="text-xs bg-green-700 px-2 py-1 rounded">방문자 리뷰 154</span>
-              <span className="text-xs bg-green-700 px-2 py-1 rounded">블로그 리뷰 112</span>
+              <span className="text-xs bg-[#262626] px-2 py-1 rounded">방문자 리뷰 154</span>
+              <span className="text-xs bg-[#262626] px-2 py-1 rounded">블로그 리뷰 112</span>
             </div>
           </div>
 
@@ -107,7 +107,7 @@ export default function Footer() {
             <div className="space-y-2">
               <Link 
                 href="https://blog.naver.com/thepin2024" 
-                className="flex items-center space-x-2 text-sm hover:text-green-300 transition-colors"
+                className="flex items-center space-x-2 text-sm hover:text-[#A78BFA] transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -116,7 +116,7 @@ export default function Footer() {
               </Link>
               <Link 
                 href="https://www.instagram.com/thepin_golf_academy/" 
-                className="flex items-center space-x-2 text-sm hover:text-green-300 transition-colors"
+                className="flex items-center space-x-2 text-sm hover:text-[#A78BFA] transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -127,7 +127,7 @@ export default function Footer() {
             
             <div className="pt-4">
               <h5 className="text-sm font-semibold mb-2">찾아오시는 길</h5>
-              <p className="text-xs text-green-200">
+              <p className="text-xs text-[#A1A1AA]">
                 쓰리엠파크2 건물입니다.<br />
                 지상주차장이므로 4층으로 오시면<br />
                 더욱 편리하게 방문 가능하십니다.
@@ -137,16 +137,16 @@ export default function Footer() {
         </div>
 
         {/* 하단 구분선 */}
-        <div className="border-t border-green-700 mt-8 pt-8">
+        <div className="border-t border-[#262626] mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-green-300">
+            <div className="text-sm text-[#A78BFA]">
               © 2024 더핀 골프 아카데미. All rights reserved.
             </div>
             <div className="flex space-x-4 text-sm">
-              <Link href="/privacy" className="hover:text-green-300 transition-colors">
+              <Link href="/privacy" className="hover:text-[#A78BFA] transition-colors">
                 개인정보처리방침
               </Link>
-              <Link href="/terms" className="hover:text-green-300 transition-colors">
+              <Link href="/terms" className="hover:text-[#A78BFA] transition-colors">
                 이용약관
               </Link>
             </div>
