@@ -107,7 +107,7 @@ export default function Footer() {
             <div className="space-y-2">
               <Link 
                 href="https://blog.naver.com/thepin2024" 
-                className="flex items-center space-x-2 text-sm hover:text-[#A78BFA] transition-colors"
+                className="flex items-center space-x-2 text-sm hover:text-[#0f5725] transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -116,7 +116,7 @@ export default function Footer() {
               </Link>
               <Link 
                 href="https://www.instagram.com/thepin_golf_academy/" 
-                className="flex items-center space-x-2 text-sm hover:text-[#A78BFA] transition-colors"
+                className="flex items-center space-x-2 text-sm hover:text-[#0f5725] transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -139,14 +139,14 @@ export default function Footer() {
         {/* 하단 구분선 */}
         <div className="border-t border-[#262626] mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-[#A78BFA]">
+            <div className="text-sm text-[#0f5725]">
               © 2024 더핀 골프 아카데미. All rights reserved.
             </div>
             <div className="flex space-x-4 text-sm">
-              <Link href="/privacy" className="hover:text-[#A78BFA] transition-colors">
+              <Link href="/privacy" className="hover:text-[#0f5725] transition-colors">
                 개인정보처리방침
               </Link>
-              <Link href="/terms" className="hover:text-[#A78BFA] transition-colors">
+              <Link href="/terms" className="hover:text-[#0f5725] transition-colors">
                 이용약관
               </Link>
             </div>

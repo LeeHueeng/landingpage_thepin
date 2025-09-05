@@ -138,20 +138,22 @@ const info = new window.kakao.maps.InfoWindow({
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6 text-center">오시는 길</h1>
-      <div className="mb-6 text-center">
-        <p className="text-lg mb-2">인천 서구 청라한내로100번길 24</p>
-        <p className="text-lg mb-2">쓰리엠파크2 4층 401호 ~ 408호</p>
+    <div className="min-h-screen bg-[#0A0A0A]">
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-3xl font-bold mb-6 text-center text-[#F5F5F5]">오시는 길</h1>
+        <div className="mb-6 text-center">
+          <p className="text-lg mb-2 text-[#A1A1AA]">인천 서구 청라한내로100번길 24</p>
+          <p className="text-lg mb-2 text-[#A1A1AA]">쓰리엠파크2 4층 401호 ~ 408호</p>
+        </div>
+
+        {msg && (
+          <div className="bg-red-900 border border-red-600 text-red-300 px-4 py-3 rounded mb-4">{msg}</div>
+        )}
+
+        <div ref={mapRef} style={{ width: '100%', height: 500, border: '1px solid #262626', borderRadius: 8 }} />
+
+        
       </div>
-
-      {msg && (
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">{msg}</div>
-      )}
-
-      <div ref={mapRef} style={{ width: '100%', height: 500, border: '1px solid #ddd', borderRadius: 8 }} />
-
-      
     </div>
   );
 }
