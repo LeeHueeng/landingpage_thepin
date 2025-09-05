@@ -8,17 +8,23 @@ interface GolfGameProps {
 }
 
 export default function GolfGame({ isOpen, onClose }: GolfGameProps) {
-  const [gameStarted, setGameStarted] = useState(false)
-  const [score, setScore] = useState(0)
-  const [gameOver, setGameOver] = useState(false)
-  const [highScore, setHighScore] = useState(0)
-  const [currentLevel, setCurrentLevel] = useState(1)
-  const [isDragging, setIsDragging] = useState(false)
-  const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
-  
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  const gameLoopRef = useRef<number>()
-  const ballRef = useRef<{ x: number; y: number; velocityX: number; velocityY: number; radius: number }>({
+  const [gameStarted, setGameStarted] = useState(false);
+  const [score, setScore] = useState(0);
+  const [gameOver, setGameOver] = useState(false);
+  const [highScore, setHighScore] = useState(0);
+  const [currentLevel, setCurrentLevel] = useState(1);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const gameLoopRef = useRef<number>(0);
+  const ballRef = useRef<{
+    x: number;
+    y: number;
+    velocityX: number;
+    velocityY: number;
+    radius: number;
+  }>({
     x: 100,
     y: 200,
     velocityX: 0,
