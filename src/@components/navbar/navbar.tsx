@@ -2,11 +2,9 @@
 
 import React, { useState } from 'react'
 import Link from 'next/link'
-import GolfGame from './GolfGame'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isGameOpen, setIsGameOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -41,13 +39,6 @@ export default function Navbar() {
         {/* 두 번째 그룹 - 위치 고정 */}
         <div className='flex gap-6 items-center'>
           <Link href='/reservation' className='bg-[#FFFFFF] hover:bg-[#E4E4E7] px-4 py-2 rounded-full transition-colors text-[#000000]'>예약/문의</Link>
-          <button 
-            onClick={() => setIsGameOpen(true)}
-            className='hover:text-[#0f5725] transition-colors text-lg'
-            title="이스터에그 게임"
-          >
-            🎮
-          </button>
         </div>
       </div>
 
@@ -130,15 +121,6 @@ export default function Navbar() {
             >
               📞 예약/문의
             </Link>
-            <button 
-              onClick={() => {
-                setIsGameOpen(true)
-                closeMenu()
-              }}
-              className='text-white hover:text-[#0f5725] transition-colors py-2 border-b border-[#262626] text-left'
-            >
-              🎮 이스터에그 게임
-            </button>
           </div>
 
           {/* 모바일 메뉴 하단 정보 */}
@@ -155,12 +137,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
-      {/* 골프 게임 모달 */}
-      <GolfGame 
-        isOpen={isGameOpen} 
-        onClose={() => setIsGameOpen(false)} 
-      />
     </nav>
   )
 }
