@@ -32,7 +32,7 @@ export default function Navbar() {
           <Link href='/' className='hover:text-[#0f5725] transition-colors'>시설 소개</Link>
           <Link href='/about' className='hover:text-[#0f5725] transition-colors'>회원 혜택</Link>            
           <Link href='/reviews' className='hover:text-[#0f5725] transition-colors'>사용 후기</Link>
-          <Link href='/pros' className='hover:text-[#0f5725] transition-colors'>프로 소개</Link>
+          <Link href='/pros' className='hover:text-[#0f5725] transition-colors' target="_blank" rel="noopener noreferrer">프로 소개</Link>
           <Link href='/location' className='hover:text-[#0f5725] transition-colors'>오시는 길</Link>
         </div>
         
@@ -104,6 +104,8 @@ export default function Navbar() {
               href='/pros' 
               onClick={closeMenu}
               className='text-white hover:text-[#0f5725] transition-colors py-2 border-b border-[#262626]'
+              target="_blank" 
+              rel="noopener noreferrer"
             >
               👨‍🏫 프로 소개
             </Link>
