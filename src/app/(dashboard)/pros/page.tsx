@@ -57,14 +57,46 @@ export default function ProsPage() {
           </div>
         </div>
 
-        {/* 프로 카드 섹션 */}
-        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 transition-all duration-1400 ease-out delay-400 ${
+        {/* Head PRO - 조영은 */}
+        <div className={`mb-16 transition-all duration-1400 ease-out delay-400 ${
+          isVisible 
+            ? "opacity-100 translate-y-0" 
+            : "opacity-0 translate-y-8"
+        }`}>
+          <div className="flex justify-center">
+            <div className={`group relative transition-all duration-1000 ease-out delay-500 ${
+              isVisible 
+                ? "opacity-100 translate-y-0" 
+                : "opacity-0 translate-y-8"
+            }`}>
+              <div className="absolute -inset-1 bg-gradient-to-r from-yellow-600 via-yellow-700 to-yellow-800 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-black/60 backdrop-blur-xl rounded-2xl border border-yellow-800/50 overflow-hidden max-w-md">
+                <div className="relative h-[500px] overflow-hidden">
+                  <img
+                    src="/KakaoTalk_Photo_2025-09-12-10-37-19 003.jpeg"
+                    alt="조영은 Head PRO"
+                    className="w-full h-full object-cover object-top group-hover:scale-110 transition-all duration-700 ease-out"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                </div>
+                
+                <div className="p-8 text-center">
+                  <h2 className="text-3xl font-bold text-white mb-2">조영은</h2>
+                  <p className="text-yellow-400 text-lg font-semibold">HEAD PRO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 나머지 프로들 */}
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 transition-all duration-1400 ease-out delay-600 ${
           isVisible 
             ? "opacity-100 translate-y-0" 
             : "opacity-0 translate-y-8"
         }`}>
           {/* 조필규 프로 */}
-          <div className={`group relative transition-all duration-1000 ease-out delay-500 ${
+          <div className={`group relative transition-all duration-1000 ease-out delay-700 ${
             isVisible 
               ? "opacity-100 translate-y-0" 
               : "opacity-0 translate-y-8"
@@ -88,7 +120,7 @@ export default function ProsPage() {
           </div>
 
           {/* 하준규 프로 */}
-          <div className={`group relative transition-all duration-1000 ease-out delay-600 ${
+          <div className={`group relative transition-all duration-1000 ease-out delay-800 ${
             isVisible 
               ? "opacity-100 translate-y-0" 
               : "opacity-0 translate-y-8"
@@ -112,7 +144,7 @@ export default function ProsPage() {
           </div>
 
           {/* 배꽃 프로 */}
-          <div className={`group relative transition-all duration-1000 ease-out delay-700 ${
+          <div className={`group relative transition-all duration-1000 ease-out delay-900 ${
             isVisible 
               ? "opacity-100 translate-y-0" 
               : "opacity-0 translate-y-8"
@@ -136,7 +168,7 @@ export default function ProsPage() {
           </div>
 
           {/* 장효진 프로 */}
-          <div className={`group relative transition-all duration-1000 ease-out delay-800 ${
+          <div className={`group relative transition-all duration-1000 ease-out delay-1000 ${
             isVisible 
               ? "opacity-100 translate-y-0" 
               : "opacity-0 translate-y-8"
@@ -154,30 +186,6 @@ export default function ProsPage() {
               
               <div className="p-6 text-center">
                 <h2 className="text-2xl font-bold text-white mb-2">장효진</h2>
-                <p className="text-slate-400 text-sm">PRO</p>
-              </div>
-            </div>
-          </div>
-
-          {/* 조영은 프로 */}
-          <div className={`group relative transition-all duration-1000 ease-out delay-900 ${
-            isVisible 
-              ? "opacity-100 translate-y-0" 
-              : "opacity-0 translate-y-8"
-          }`}>
-            <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 via-gray-700 to-gray-800 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative bg-black/60 backdrop-blur-xl rounded-2xl border border-gray-800/50 overflow-hidden">
-              <div className="relative h-[400px] overflow-hidden">
-                <img
-                  src="/KakaoTalk_Photo_2025-09-12-10-37-19 003.jpeg"
-                  alt="조영은 프로"
-                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-all duration-700 ease-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-              </div>
-              
-              <div className="p-6 text-center">
-                <h2 className="text-2xl font-bold text-white mb-2">조영은</h2>
                 <p className="text-slate-400 text-sm">PRO</p>
               </div>
             </div>

@@ -188,7 +188,7 @@ export default function AboutPage() {
                 <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 break-keep">
                   레슨 후 상쾌하게 씻을 수 있는 <br/>프리미엄 샤워실을 제공합니다.<br/> 
                   고급 어메니티와 함께 편리하게 이용하세요.
-                  <br/>(헐 나두 씻을래 ! ! 회)
+                  <br/>(헐 나두 씻을래 ! !)
                 </p>
               </div>
             </div>
