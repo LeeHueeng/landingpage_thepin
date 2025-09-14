@@ -32,6 +32,7 @@ export default function Navbar() {
           <Link href='/' className='hover:text-[#0f5725] transition-colors'>시설 소개</Link>
           <Link href='/about' className='hover:text-[#0f5725] transition-colors'>회원 혜택</Link>
           <Link href='/pros' className='hover:text-[#0f5725] transition-colors'>프로 소개</Link>
+          <Link href='/music' className='hover:text-[#0f5725] transition-colors'>신청곡</Link>
           <Link href='/location' className='hover:text-[#0f5725] transition-colors'>오시는 길</Link>
         </div>
         
@@ -98,6 +99,13 @@ export default function Navbar() {
               className='text-white hover:text-[#0f5725] transition-colors py-2 border-b border-[#262626]'
             >
               👨‍🏫 프로 소개
+            </Link>
+            <Link 
+              href='/music' 
+              onClick={closeMenu}
+              className='text-white hover:text-[#0f5725] transition-colors py-2 border-b border-[#262626]'
+            >
+              🎵 신청곡
             </Link>
             <Link 
               href='/location' 
