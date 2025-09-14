@@ -17,10 +17,6 @@ export default function Footer() {
               청라큐이디 더핀골프아카데미<br />
               청라실내골프연습장
             </p>
-            <div className="flex space-x-4">
-              <span className="text-xs bg-[#262626] px-2 py-1 rounded">방문자 리뷰 154</span>
-              <span className="text-xs bg-[#262626] px-2 py-1 rounded">블로그 리뷰 112</span>
-            </div>
           </div>
 
           {/* 연락처 정보 */}
@@ -35,15 +31,6 @@ export default function Footer() {
               <div className="flex items-center space-x-2">
                 <span>📍</span>
                 <span>인천 서구 청라한내로100번길 24<br />쓰리엠파크2 4층 401-408호</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span>🕒</span>
-                <span>평일 영업시간: 07:00 ~ 23:00</span>
-           
-              </div>
-              <div className="flex items-center space-x-2"> 
-              <span>🕒</span>
-            <span>주말(공휴일) 영업시간: 09:00 ~ 21:00</span>
               </div>
             </div>
           </div>    {/* 연락처 정보 */}

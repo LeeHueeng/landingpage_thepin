@@ -14,6 +14,14 @@ export default function Navbar() {
     setIsMenuOpen(false)
   }
 
+  const handleKakaoChat = () => {
+    // 카카오톡 오픈채팅방 링크
+    const kakaoLink = 'https://open.kakao.com/o/syels2Rh'
+    
+    // 새 창으로 오픈채팅방 열기
+    window.open(kakaoLink, '_blank')
+  }
+
   return (
     <nav className='flex justify-between items-center p-4 px-6 md:px-10 w-full fixed top-0 left-0 right-0 z-50 bg-black shadow-lg border-b border-[#262626]/50'>
       
@@ -38,7 +46,12 @@ export default function Navbar() {
         
         {/* 두 번째 그룹 - 위치 고정 */}
         <div className='flex gap-6 items-center'>
-          <Link href='/reservation' className='bg-[#FFFFFF] hover:bg-[#E4E4E7] px-4 py-2 rounded-full transition-colors text-[#000000]'>예약/문의</Link>
+          <button 
+            onClick={handleKakaoChat}
+            className='bg-[#FFFFFF] hover:bg-[#E4E4E7] px-4 py-2 rounded-full transition-colors text-[#000000]'
+          >
+            예약/문의
+          </button>
         </div>
       </div>
 
@@ -114,13 +127,15 @@ export default function Navbar() {
             >
               📍 오시는 길
             </Link>
-            <Link 
-              href='/reservation' 
-              onClick={closeMenu}
+            <button 
+              onClick={() => {
+                closeMenu()
+                handleKakaoChat()
+              }}
               className='bg-[#FFFFFF] hover:bg-[#E4E4E7] text-[#000000] px-6 py-3 rounded-full text-center transition-colors mt-4'
             >
               📞 예약/문의
-            </Link>
+            </button>
           </div>
 
           {/* 모바일 메뉴 하단 정보 */}

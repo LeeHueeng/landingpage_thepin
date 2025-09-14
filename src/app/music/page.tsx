@@ -254,7 +254,7 @@ export default function MusicPage() {
               <p className="text-gray-300 mb-6 text-lg">신청은 카카오톡으로 받습니다</p>
               <div className="flex justify-center">
                 <a 
-                  href="https://open.kakao.com/o/gf7MZ1Rh" 
+                  href="https://open.kakao.com/o/slCVF3Rh" 
                   className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
                   target="_blank"
                   rel="noopener noreferrer"
